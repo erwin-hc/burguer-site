@@ -428,12 +428,13 @@ ul.lista {
   padding-top: 10px;
   padding-left: 10px;
   min-height: 20px;
-  background: #cecece; 
+  background: #cececea4; 
   font-weight: 900;
   letter-spacing: 2.5px;
   
 }
 .li-data {
+  background: #cececea4; 
   color: #181818 !important;
   font-size: calc(.50rem + 1.25vw);
   text-align: right;
@@ -441,16 +442,17 @@ ul.lista {
   /* background: #D3775D;  */
   padding-bottom: 10px;
   padding-right: 10px;
+  
 }
 
 .li-coment {
   color: #181818 !important;
-  text-align: justify;
+  text-align: left;
   word-wrap: break-word;
   font-size: calc(.75rem + 1.25vw);
   min-height: 80px;
-  padding-top: 10px;
-  padding-left: 10px;
+  padding: 25px;
+  width: 100%;
 
   
 }
