@@ -10,7 +10,7 @@
     <link rel="stylesheet"
   href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
   <!-- Link To CSS -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/style.css">
    
 </head>
 <body>
@@ -129,25 +129,30 @@
                 <p>Entrega rápida para toda Itajaí<br>
                 Entre em contato para valores de entrega</p>
             </div>
-            <!-- Box 3 -->
-            <!-- <div class="s-box">
-                <img src="images/shipping.png" alt="">
-                <h3>Delivered</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit ea fugiat esse tempore ipsum temporibus.</p>
-            </div> -->
         </div>
     </section>
 
-    <!-- Connect -->
+    <!-- COMENTARIOS -->
     <section class="connect">
-        <div class="connect-text">
-            <span>Deixe um recado</span>
-            <h2>-Comentários</h2>
-        </div>
-        <a href="#contact" class="btn">Comentar</a>
+        <div class="box-container" id="darkmode">   
+            <div class="box-form">
+            <h1>-Comentários<span><input id="count" readonly disabled></span></h1>
+            <form id="form">
+            <input style="text-transform: uppercase;" type="text"           id="inputNome" placeholder=" Nome: " required>
+            <textarea style="text-transform: capitalize;"name="comentarios" id="inputComen" placeholder=" Comentar ..." required></textarea>
+            <br><button class="btn" id="btn-salvar"   style="cursor: pointer;" >Comentar</button>  
+            
+            </form>
+            </div>
+            
+            <div id="box-lista"><br>
+            <ul style="list-style:none;" class="lista"></ul>
+            <button class="btn" id="btn-showmore" style="cursor: pointer;" >Todos</button>
+            </div>
+            <br>
+            </div> 
     </section>
-
-    <!-- Contact -->
+    <!-- COMENTARIOS -->
     <section class="contact" id="contact">
         <div class="contact-box">
             <h3>🍺 Cervejaria de boteco
@@ -167,13 +172,6 @@
             <li><a href="#services">Entrega</a></li>
             <li><a href="#contact">Comentários</a></li>
         </div>
-        <!-- <div class="contact-box">
-            <h3>Quick Links</h3>
-            <li><a href="#Contact">Contact</a></li>
-            <li><a href="#Privacy Policy">Privacy Policy</a></li>
-            <li><a href="#Disclaimer">Disclaimer</a></li>
-            <li><a href="#Terms Of Use">Terms Of Use</a></li>
-        </div> -->
         <div class="contact-box address">
             <h3>Contatos</h3>
             <i class='bx bxs-map' ><span>Av, Independência nº 71<br>
@@ -192,6 +190,25 @@
     <!-- Scroll Reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- Link To JavaScript -->
-    <script src="main.js"></script>
+            <!-- FIREBSE -->
+            <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-firestore.js"></script>
+            <!-- FIREBSE -->
+                    <script>
+                    var firebaseConfig = {
+                    apiKey: "AIzaSyAN7lhI0o34cNGha7ne50I5q9Tx3EjFABI",
+                    authDomain: "comments-ddee5.firebaseapp.com",  
+                    databaseURL: "https://comments-ddee5-default-rtdb.firebaseio.com",  
+                    projectId: "comments-ddee5",  
+                    storageBucket: "comments-ddee5.appspot.com",  
+                    messagingSenderId: "282421967272",  
+                    appId: "1:282421967272:web:86f0304456d45a07f9059d"  
+                    };
+
+                    firebase.initializeApp(firebaseConfig);
+                    const db = firebase.firestore();
+                    </script>
+            <script src="/main.js"></script>
+    
 </body>
 </html>
