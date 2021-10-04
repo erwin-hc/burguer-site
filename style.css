@@ -330,7 +330,8 @@ border: none;
 }
 
 .card-coments {
-  background-color: #eee;
+  /* background-color: #eee; */
+  background-color: transparent;
   overflow: hidden;
   width: 100%;
   padding: 0 0;
@@ -339,6 +340,7 @@ border: none;
   /* border: 2px solid saddlebrown; */
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
+
 ul.lista {
   padding: 0;
   width: 95%;    
@@ -347,30 +349,31 @@ ul.lista {
   display:none;
 }
 .li-nome {
-  color: #181818 !important;
+  /* color: #181818 !important; */
   font-size: calc(.75rem + 1.25vw);
   padding-top: 10px;
   padding-left: 10px;
   min-height: 20px;
-  background: #cececea4; 
+  /* background: #cececea4;  */
   font-weight: 900;
   letter-spacing: 2.5px;
   
 }
 .li-data {
-  background: #cececea4; 
-  color: #181818 !important;
+
   font-size: calc(.50rem + 1.25vw);
   text-align: right;
   min-height: 10px;
   /* background: #D3775D;  */
   padding-bottom: 10px;
   padding-right: 10px;
+  border-bottom: 2px solid var(--main-color) ;
+  text-align: right;
   
 }
 
 .li-coment {
-  color: #181818 !important;
+  /* color: #181818 !important; */
   text-align: left;
   word-wrap: break-word;
   font-size: calc(.75rem + 1.25vw);
